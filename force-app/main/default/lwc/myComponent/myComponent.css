@@ -1,0 +1,9 @@
+.mybox{
+    display: flex;
+    align-items: center;
+    background: #f3f2f2;
+    cursor: pointer;
+    width: 500px;
+    text-align: left;
+    color: currentColor;
+}

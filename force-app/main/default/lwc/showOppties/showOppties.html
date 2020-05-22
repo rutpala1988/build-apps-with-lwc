@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Oppties" icon-name="standard:opportunity">
+        <lightning-button onclick={handleProductsDisplay} label="Show Products" variant="brand" slot="actions"></lightning-button>
+            <lightning-datatable
+                key-field="Id"
+                data={opptiesData}
+                columns={columns}
+                hide-checkbox-column="true">
+                </lightning-datatable>
+    
+        <template if:true={showProducts}>
+            <lightning-card title="Products" icon-name="standard:product">
+                    <lightning-datatable key-field="productId" data={products} columns={pCols} hide-checkbox-column="true"></lightning-datatable>
+            </lightning-card>
+        </template>
+    </lightning-card>
+</template>
